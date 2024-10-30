@@ -1,0 +1,53 @@
+.page-header {
+  padding: 15px 1rem 15px 1rem;
+}
+
+.page-header-logo button {
+  height: 32px;
+  width: 32px;
+}
+
+h1.logo-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+#menuIcon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    gap: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    padding: 0.5rem;
+  }
+
+  #menuIcon {
+    display: block;
+  }
+}

@@ -1,0 +1,45 @@
+.sign-up-form {
+  min-width: 33.33vw;
+  max-width: 50vw;
+  width: 100%;
+
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .form-element {
+    margin-top: 1rem;
+  }
+
+  .validation-error input {
+    border: 2px solid #dc2626;
+  }
+
+  label {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  input {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  label:has(+ input:required):after {
+    content: ' *';
+  }
+
+  ul.errors {
+    margin: 3px 0;
+
+    li {
+      font-size: 0.9rem;
+      color: #dc2626;
+    }
+  }
+}

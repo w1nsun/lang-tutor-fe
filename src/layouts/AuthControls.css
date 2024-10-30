@@ -1,0 +1,12 @@
+.page-header-avatar {
+  height: 32px;
+  width: 32px;
+}
+
+#menuList {
+  max-height: 0;
+}
+
+#menuList.open {
+  max-height: 300px;
+}
